@@ -11,7 +11,7 @@
 			"purpose": "any maskable"
 		}
 	],
-	"name": "Debug my brain",
-	"short_name": "DebugMyBrain",
-	"start_url": "/index.html"
+	"name": "Debug My Brain",
+	"short_name": "Debug My Brain",
+	"start_url": "/"
 }
