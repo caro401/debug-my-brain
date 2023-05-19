@@ -1,7 +1,15 @@
 /*place global styles here */
-html, body { @apply h-full; }
-@font-face {
-	font-family: 'Quicksand';
-	src: url('/fonts/Quicksand.ttf');
-	font-display: swap;
+html,
+body {
+	@apply h-full bg-surface-50-900-token;
+	font-family: 'RecursiveVariable', 'Recursive', sans-serif;
+}
+main {
+	@apply prose md:prose-lg lg:prose-xl prose-slate dark:prose-invert;
+	@apply h-full max-w-prose mx-auto py-16 md:py-24 my-0 px-8 md:px-12;
+}
+
+:is(.dark .variant-soft-primary),
+:is(.dark .variant-ghost-primary) {
+	background-color: rgb(var(--color-primary-500) / 0.3);
 }
