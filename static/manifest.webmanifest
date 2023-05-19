@@ -1,0 +1,17 @@
+{
+	"background_color": "#120b18",
+	"theme_color": "#744aa1",
+	"description": "Work out why my brain isn't behaving.",
+	"display": "fullscreen",
+	"icons": [
+		{
+			"src": "favicon.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	],
+	"name": "Debug my brain",
+	"short_name": "DebugMyBrain",
+	"start_url": "/index.html"
+}

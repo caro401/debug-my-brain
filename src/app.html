@@ -4,9 +4,20 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="theme-color" content="#744aa1" />
+		<title>Debug My Brain | Caro FYI</title>
+		<meta name="description" content="Work out why Caro's brain is not behaving" />
+		<link rel="manifest" href="/manifest.webmanifest" />
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js').then(() => {
+				console.log('Service Worker Registered');
+			});
+		}
+	</script>
 </html>
